@@ -10,13 +10,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Workflow](#workflow)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,11 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](Desktop-view(without-mouse-hover).png) ![Desktop view](Desktop-view(with-mouse-hover).png)
+![Desktop view](Desktop-view(without-mouse-hover).png) 
+![Desktop view](Desktop-view(with-mouse-hover).png)
+
 ### Links
 
 - Solution URL: [Solution](https://github.com/Mohaniish2208/Product-preview-card-component.git)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://mohaniish2208.github.io/Product-preview-card-component/)
 
 ## My process
 
@@ -46,7 +47,7 @@ Users should be able to:
 - Mobile-first workflow
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Workflow
 
 ### What I learned
 
@@ -87,9 +88,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
