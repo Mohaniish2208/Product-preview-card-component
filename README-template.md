@@ -43,18 +43,20 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Sass
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
+- Custom CSS (Desktop-first)
+- CSS Flexbox for layout
+- Responsive design using media queries
+- Google Fonts (`Fraunces`, `Montserrat`)
+- Material Symbols for cart icon (🛒)
 
 ### Workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- I learned how to implement `letter-spacing` to control the spacing between characters for a more polished look.
+- I discovered how using `&:hover` in CSS is actually SCSS syntax — not valid in pure CSS unless using a preprocessor like Sass.
+- I’ve started **compartmentalizing my HTML** using clear comment sections (e.g., `<!-- CSS docs -->`, `<!-- Fonts -->`) to keep my codebase organized and readable.
+- I practiced making designs responsive and accessible by matching layout and typography across screen sizes as instructed in the challenge brief.
 
 ```html
  
@@ -71,6 +73,7 @@ To see how you can add code snippets, see below:
 
 ```
 This is something I have started to pay attention to: compartmentalizing my code using clear comment sections like <!-- CSS docs -->, <!-- Fonts -->, and <!-- Symbols --> to keep my HTML more organized and readable.
+
 ```css
 .btn{
     display: flex;
