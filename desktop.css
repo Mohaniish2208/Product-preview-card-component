@@ -1,0 +1,105 @@
+.body{
+    max-width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 2em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.article{
+    display: flex;
+    max-width: 850px;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.article img{
+    width: 50%;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#layout{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.name{
+    letter-spacing: 0.6em;
+}
+
+.name, .info, .orgPrice, .btn{
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.info{
+    line-height: 1.7em;
+    margin-right: 2em;
+}
+
+.heading, .newPrice{
+    font-family: "Fraunces";
+    font-size: 3em;
+}
+
+.heading{
+    margin-top: 0.2em;
+    line-height: 1em;
+}
+
+.info{
+    margin-top: 0.2em;
+}
+
+.newPrice{
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.orgPrice{
+    text-decoration: line-through;
+}
+
+.discount{
+    margin-top: 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5em;
+    color: hsl(0, 0%, 100%);
+    gap: 0.5em;
+    &:hover{
+        cursor: pointer;
+        background-color: hsl(158, 42%, 18%);
+        transition: 1s ease-in-out;
+    }
+}
+
+.attribution{
+    text-align: center;
+    margin: 2em;
+}
