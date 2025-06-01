@@ -42,6 +42,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Sass
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -56,22 +57,38 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ 
+  <!-- CSS docs -->
+  <link href = "mobile.css" rel = "stylesheet">
+  <link href = "desktop.css" rel = "stylesheet">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+
 ```
+This is something I have started to pay attention to: compartmentalizing my code using clear comment sections like <!-- CSS docs -->, <!-- Fonts -->, and <!-- Symbols --> to keep my HTML more organized and readable.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5em;
+    color: hsl(0, 0%, 100%);
+    gap: 0.5em;
+    &:hover{
+        cursor: pointer;
+        background-color: hsl(158, 42%, 18%);
+        transition: 1s ease-in-out;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+This is something new I learned in this project: how to use &:hover inside a CSS rule to apply hover effects cleanly, which is part of SCSS syntax rather than plain CSS.
 
 ### Continued development
 
@@ -81,16 +98,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@400;GRAD@0;opsz@24&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f) - This helped me to get a proper link.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@Mohaniish2208](https://www.frontendmentor.io/profile/Mohaniish2208)
 
 ## Acknowledgments
 
