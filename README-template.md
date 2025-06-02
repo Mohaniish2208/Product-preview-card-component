@@ -107,7 +107,7 @@ In future projects, I want to:
 
 - [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@400;GRAD@0;opsz@24&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f) - This helped me for importing fonts.
 
--[Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@0;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f) - This helped me embed the "Shopping Cart" symbol.
+- [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@0;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f) - This helped me embed the "Shopping Cart" symbol.
 
 ## Author
 
