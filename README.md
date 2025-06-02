@@ -1,92 +1,122 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Workflow](#workflow)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Desktop view](Desktop-view(without-mouse-hover).png) 
+![Desktop view](Desktop-view(with-mouse-hover).png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Solution](https://github.com/Mohaniish2208/Product-preview-card-component.git)
+- Live Site URL: [Live site](https://mohaniish2208.github.io/Product-preview-card-component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Sass
+- Custom CSS (Desktop-first)
+- CSS Flexbox for layout
+- Responsive design using media queries
+- Google Fonts (`Fraunces`, `Montserrat`)
+- Material Symbols for cart icon (🛒)
 
-## Building your project
+### Workflow
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- I learned how to implement `letter-spacing` to control the spacing between characters for a more polished look.
+- I discovered how using `&:hover` in CSS is actually SCSS syntax — not valid in pure CSS unless using a preprocessor like Sass.
+- I’ve started **compartmentalizing my HTML** using clear comment sections (e.g., `<!-- CSS docs -->`, `<!-- Fonts -->`) to keep my codebase organized and readable.
+- I practiced making designs responsive and accessible by matching layout and typography across screen sizes as instructed in the challenge brief.
 
-## Deploying your project
+```html
+ 
+  <!-- CSS docs -->
+  <link href = "mobile.css" rel = "stylesheet">
+  <link href = "desktop.css" rel = "stylesheet">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+```
+This is something I have started to pay attention to: compartmentalizing my code using clear comment sections like <!-- CSS docs -->, <!-- Fonts -->, and <!-- Symbols --> to keep my HTML more organized and readable.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```css
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5em;
+    color: hsl(0, 0%, 100%);
+    gap: 0.5em;
+    &:hover{
+        cursor: pointer;
+        background-color: hsl(158, 42%, 18%);
+        transition: 1s ease-in-out;
+    }
+}
+```
+This is something new I learned in this project: how to use &:hover inside a CSS rule to apply hover effects cleanly, which is part of SCSS syntax rather than plain CSS.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Continued development
 
-## Create a custom `README.md`
+In future projects, I want to:
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- Convert this layout into a React component using Styled Components.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- Make it accessible with keyboard navigation and improved ARIA roles.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Animate the card or button using CSS transitions or keyframes.
 
-## Submitting your solution
+### Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@400;GRAD@0;opsz@24&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f) - This helped me for importing fonts.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@0;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f) - This helped me embed the "Shopping Cart" symbol.
+README.md
+## Author
 
-## Sharing your solution
+- GitHub - [@Mohaniish2208](https://github.com/Mohaniish2208)
 
-There are multiple places you can share your solution:
+- Frontend Mentor - [@Mohaniish2208](https://www.frontendmentor.io/profile/Mohaniish2208)
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## Acknowledgments
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+I would like to thank Frontend Mentor for providing this challenge — it helped me practice responsive layout, spacing, and clean CSS structure. Special appreciation to the Frontend Mentor community, whose solutions and feedback offer continuous learning and inspiration.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Also, thanks to Google Fonts and Material Symbols for their free and easy-to-integrate resources that enhanced the visual appeal of this project.
