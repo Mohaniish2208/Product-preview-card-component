@@ -95,20 +95,28 @@ This is something new I learned in this project: how to use &:hover inside a CSS
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Convert this layout into a React component using Styled Components.
+
+- Make it accessible with keyboard navigation and improved ARIA roles.
+
+- Animate the card or button using CSS transitions or keyframes.
 
 ### Useful resources
 
-- [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@400;GRAD@0;opsz@24&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f) - This helped me to get a proper link.
+- [Google Fonts](https://fonts.google.com/?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@400;GRAD@0;opsz@24&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f) - This helped me for importing fonts.
+
+-[Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:shopping_cart:FILL@0;wght@0;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f) - This helped me embed the "Shopping Cart" symbol.
 
 ## Author
+
+- GitHub - [@Mohaniish2208](https://github.com/Mohaniish2208)
 
 - Frontend Mentor - [@Mohaniish2208](https://www.frontendmentor.io/profile/Mohaniish2208)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to thank Frontend Mentor for providing this challenge — it helped me practice responsive layout, spacing, and clean CSS structure. Special appreciation to the Frontend Mentor community, whose solutions and feedback offer continuous learning and inspiration.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Also, thanks to Google Fonts and Material Symbols for their free and easy-to-integrate resources that enhanced the visual appeal of this project.
